@@ -162,6 +162,7 @@ header .nav-btns-container .btn-secondary {
 
 .our-platform-information-container {
 	max-width: 589px;
+	padding-left: 3px;
 }
 
 .features-container {
@@ -197,9 +198,6 @@ header .nav-btns-container .btn-secondary {
 	margin: 0;
 }
 
-.features-container li:first-child .p2-fonts {
-	max-width: 308px;
-}
 
 .our-platform-img-container {
 	max-width: 576px;
