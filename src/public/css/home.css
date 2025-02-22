@@ -162,7 +162,6 @@ header .nav-btns-container .btn-secondary {
 
 .our-platform-information-container {
 	max-width: 589px;
-	padding-left: 3px;
 }
 
 .features-container {
@@ -198,7 +197,6 @@ header .nav-btns-container .btn-secondary {
 	margin: 0;
 }
 
-
 .our-platform-img-container {
 	max-width: 576px;
 	border-radius: 16px;
@@ -209,4 +207,159 @@ header .nav-btns-container .btn-secondary {
 .our-platform-img-container img {
 	height: 100%;
 	object-fit: cover;
+}
+
+/* travel plans section */
+
+.travel-plans {
+	padding: 80px 31px;
+}
+
+.travel-plans-information-container {
+	max-width: 720px;
+	margin: 0 auto 40px auto;
+	text-align: center;
+}
+
+.travel-plans-information-container h1 {
+	margin-bottom: 16px;
+	letter-spacing: 1.8px;
+	font-weight: 500;
+}
+
+.travel-plans-information-container .p2-fonts {
+	color: var(--gray--color);
+}
+
+.travel-plans-cards-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+	margin-bottom: 40px;
+}
+
+.travel-plans-cards-container article {
+	border-radius: 16px;
+	height: 400px;
+	padding: 0 8px 0 8px;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+}
+
+.travel-plans-cards-container .card-description {
+	background-color: var(--white--color);
+	border-radius: 16px;
+	padding: 16px;
+	position: absolute;
+	bottom: 9px;
+	width: calc(100% - 16px);
+}
+
+.travel-plans-cards-container .card-description p:last-of-type {
+	color: var(--gray--color);
+	font-size: 14px;
+	margin: 4px 0 16px 0;
+}
+
+.card-description .pricing-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-description .pricing-container h4 {
+	font-weight: 500;
+	letter-spacing: 1px;
+	display: inline;
+}
+
+.card-description .pricing-container span {
+	color: var(--gray--color);
+	margin-left: -3px;
+}
+
+.card-description .pricing-container h5 {
+	color: #dd9115;
+	background-color: #f2dbb1;
+	padding: 0 8px 0 8px;
+	border-radius: 48px;
+}
+
+.travel-plans #starosel {
+	background-image: url("../img/starosel.jpg");
+}
+
+.travel-plans #kazanlak {
+	background-image: url("../img/Kings\ Valley.jpg");
+}
+
+.travel-plans #bansko {
+	background-image: url("../img/hotel\ bansko.jpg");
+}
+
+.travel-plans button {
+	display: block;
+	margin: 0 auto;
+}
+/* comment section */
+.comments {
+	padding: 80px 76px;
+}
+
+.comments h1 {
+	text-align: center;
+	max-width: 720px;
+	margin: 0 auto;
+	letter-spacing: 1.8px;
+	margin-bottom: 40px;
+}
+
+.comments-card-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+	/* display: flex;
+	gap:24px; */
+}
+
+.comments-card-container article {
+	padding: 32px;
+	border-radius: 16px;
+	border: 1px solid #e5e5e5;
+	max-width: 400px;
+}
+
+.comments-card-container li:not(:nth-of-type(1)) h2 {
+	margin-bottom: 29px;
+	max-width: 336px;
+	height: 180px;
+	line-height: 127%;
+}
+
+.comments-card-container li:nth-of-type(1) article {
+	padding-right: 31px;
+}
+
+.comments-card-container li:nth-of-type(1) h2 {
+	max-width: 336px;
+	line-height: 127%;
+}
+
+/* targeting jordan blake's comment wrapper div */
+.comments-card-container li:nth-of-type(1) > article > div:first-of-type {
+	margin-bottom: 29px;
+	height: 180px;
+}
+
+.personal-information-container .img-container {
+	margin-bottom: 6px;
+}
+
+.personal-information-container h4 {
+	margin-bottom: 4px;
+	font-weight: 600;
+}
+
+.personal-information-container .p2-fonts {
+	color: var(--gray--color);
 }
