@@ -363,3 +363,30 @@ header .nav-btns-container .btn-secondary {
 .personal-information-container .p2-fonts {
 	color: var(--gray--color);
 }
+
+/* explore section */
+.explore {
+	padding: 0 92px 80px 92px;
+}
+.explore-content-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 64px;
+	background-color: #f5f5f5;
+	border-radius: 16px;
+}
+
+.explore-information-container {
+	max-width: 548px;
+}
+
+.explore-information-container .p1-fonts {
+	color: var(--gray--color);
+	margin-top: 16px;
+}
+
+.explore-buttons-container .btn-secondary  {
+	border: 1px solid var(--gray--color);
+	color: var(--gray--color);
+	margin-right: 8px;
+}
