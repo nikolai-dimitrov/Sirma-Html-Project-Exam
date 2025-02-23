@@ -4,7 +4,7 @@ header {
 	border-radius: 16px;
 	padding: 20px 0 40px 0;
 	background-position: 49% 11%;
-    background-size: 156% auto;
+	background-size: 156% auto;
 }
 
 header nav {
@@ -12,6 +12,7 @@ header nav {
 	padding: 7.5px 60px;
 	margin-bottom: 140px;
 }
+
 header .logo-nav-wrapper {
 	display: flex;
 	gap: 48px;
@@ -31,6 +32,10 @@ header .nav-items-container {
 
 header .nav-items-container a {
 	color: var(--white--color);
+}
+
+header .menu-icon-wrapper {
+	display: none;
 }
 
 header .nav-btns-container .btn-secondary {
@@ -294,8 +299,8 @@ header .nav-btns-container .btn-secondary {
 
 .travel-plans #kazanlak {
 	background-image: url("../img/Kings\ Valley.jpg");
-	background-position: 52% 79%;
-	background-size: 139%;
+	/* background-position: 52% 79%;
+	background-size: 139%; */
 }
 
 .travel-plans #bansko {
@@ -479,4 +484,552 @@ footer .lower-side-wrapper {
 
 .footer-sirma-rights-container ul a {
 	color: var(--white--color);
+}
+
+@media screen and (max-width: 1410px) {
+	/* header */
+	header nav {
+		justify-content: space-between;
+	}
+
+	header .logo-nav-wrapper {
+		padding: 0px 0 0 202.75px;
+	}
+
+	/* landscape */
+	.landscape-cards-container li {
+		width: 33%;
+		height: 330px;
+	}
+
+	.landscape-cards-container article {
+		width: 100%;
+		height: 100%;
+	}
+
+	/* travel plans */
+	.travel-plans #bansko {
+		background-position: center;
+		background-size: cover;
+	}
+
+	/* comments */
+	.comments-card-container li:nth-of-type(1) > article > div:first-of-type {
+		overflow: scroll;
+	}
+
+	.comments-card-container li:not(:nth-of-type(1)) h2 {
+		overflow: scroll;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	/* header */
+	header {
+		background-position: center top;
+		background-size: unset;
+	}
+	header .logo-nav-wrapper {
+		padding: 0px 0 0 130px;
+		gap: 30px;
+	}
+
+	header .nav-items-container {
+		gap: 30px;
+	}
+
+	/* our platform */
+	.our-platform-information-container {
+		width: 48%;
+	}
+	.our-platform-img-container {
+		width: 48%;
+	}
+
+	/* travel plans */
+	.travel-plans-cards-container {
+		gap: 17px;
+	}
+
+	/* explore */
+	.explore-information-container {
+		max-width: 54%;
+	}
+
+	/* footer */
+	.footer-content-container {
+		max-width: 54%;
+	}
+}
+
+@media screen and (max-width: 1099px) {
+	header .logo-nav-wrapper {
+		padding: 0 0 0 20px;
+	}
+
+	/* landscape */
+	.landscape {
+		padding: 50px 31px;
+	}
+
+	/* our platform */
+	.our-platform {
+		padding: 50px 31px;
+	}
+
+	.our-platform-information-container {
+		width: 52%;
+	}
+	.our-platform-img-container {
+		width: 45%;
+	}
+
+	/* travel plans */
+	.travel-plans {
+		padding: 50px 31px;
+	}
+
+	.travel-plans-cards-container {
+		gap: 12px;
+	}
+
+	.travel-plans #starosel {
+		background-position: center;
+		background-size: cover;
+	}
+
+	.travel-plans .card-description {
+		padding: 12px;
+	}
+
+	.travel-plans .card-description .p1-fonts {
+		font-size: 17px;
+	}
+
+	/* comments */
+	.comments {
+		padding: 50px 31px;
+	}
+
+	/* explore */
+	.explore {
+		padding: 0 72px 50px 72px;
+	}
+
+	.explore-information-container {
+		max-width: 47%;
+	}
+
+	.explore-content-container {
+		padding: 44px 36px;
+	}
+
+	/* footer */
+	.footer-content-container {
+		max-width: 47%;
+	}
+}
+
+/* Very small laptop and mobile devices */
+@media screen and (max-width: 1024px) {
+	/* header */
+	header nav {
+		padding: 7.5px 20px;
+	}
+
+	header .logo-nav-wrapper {
+		padding: unset;
+	}
+
+	.header .logo-nav-wrapper .nav-items-container {
+		gap: 20px;
+	}
+
+	.hero-heading {
+		font-size: 36px;
+	}
+	/* landscape */
+	.landscape-cards-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"nesebar plovdiv"
+			"sofia sofia";
+		gap: 20px;
+	}
+
+	.landscape-cards-container li {
+		width: 100%;
+	}
+
+	.landscape-cards-container #nesebar-container {
+		grid-area: nesebar;
+	}
+
+	.landscape-cards-container #plovdiv-container {
+		grid-area: plovdiv;
+	}
+
+	.landscape-cards-container #sofia-container {
+		grid-area: sofia;
+	}
+
+	/* our platform */
+	.our-platform-information-container {
+		width: 47%;
+	}
+
+	.features-container {
+		gap: 5px;
+	}
+
+	/* travel plans */
+	.travel-plans-cards-container {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"starosel kazanlak"
+			"bansko bansko";
+		gap: 20px;
+	}
+
+	.travel-plans-cards-container #starosel-container {
+		grid-area: starosel;
+	}
+
+	.travel-plans-cards-container #kazanlak-container {
+		grid-area: kazanlak;
+	}
+
+	.travel-plans-cards-container #bansko-container {
+		grid-area: bansko;
+	}
+
+	.travel-plans-cards-container #bansko-container .card-description {
+		width: calc(50% - 26px);
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.travel-plans-information-container {
+		max-width: 550px;
+	}
+
+	.travel-plans .card-description .p1-fonts {
+		font-size: 16px;
+	}
+
+	/* comments */
+	.comments-card-container {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"jordan taylor"
+			"avery avery";
+		gap: 20px;
+	}
+
+	.comments-card-container li:nth-of-type(1) {
+		grid-area: jordan;
+	}
+
+	.comments-card-container li:nth-of-type(2) {
+		grid-area: taylor;
+	}
+
+	.comments-card-container li:nth-of-type(3) {
+		grid-area: avery;
+	}
+
+	.comments-card-container article {
+		max-width: unset;
+	}
+
+	.comments-card-container li:nth-of-type(3) article {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.comments-card-container li:nth-of-type(3) h2 {
+		height: unset;
+	}
+
+	/* footer */
+	.footer-form-container input {
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	/* header */
+	header .logo-nav-wrapper {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	header .nav-btns-container {
+		display: none;
+	}
+
+	header .nav-items-container {
+		display: none;
+	}
+
+	header .menu-icon-wrapper {
+		display: block;
+		color: var(--white--color);
+		font-size: 30px;
+	}
+
+	/* landscape */
+	.landscape {
+		padding: 40px 31px 40px 31px;
+	}
+
+	/* our platform */
+	.our-platform {
+		flex-direction: column;
+		padding: 0 31px 40px 31px;
+	}
+
+	.our-platform-information-container {
+		max-width: unset;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.our-platform-information-container > .p2-fonts {
+		text-align: center;
+	}
+
+	.our-platform h1 {
+		text-align: center;
+	}
+
+	.features-container {
+		margin: 0 auto 20px auto;
+	}
+
+	.features-container li:nth-child(2) .features-icon-container img {
+		width: 33px;
+	}
+
+	.our-platform .btn-primary {
+		display: block;
+		margin: 0 auto;
+		width: 40%;
+	}
+	.our-platform-img-container {
+		max-width: unset;
+		width: 100%;
+		height: unset;
+	}
+
+	.comments-card-container li:nth-of-type(3) h2 {
+		max-width: 270px;
+	}
+
+	/* travel plans */
+	.travel-plans {
+		padding: 0 31px 40px 31px;
+	}
+
+	.comments {
+		padding: 0px 31px 40px 31px;
+	}
+
+	/* explore */
+	.explore {
+		padding: 0 72px 40px 72px;
+	}
+
+	.explore-content-container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.explore-information-container {
+		max-width: unset;
+		margin-bottom: 30px;
+	}
+
+	/* footer */
+	footer .form-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	footer .form-wrapper input {
+		margin-right: unset;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	/* landscape */
+	.landscape-cards-container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas:
+			"nesebar"
+			"plovdiv"
+			"sofia";
+		gap: 20px;
+	}
+
+	/* travel plans */
+	.travel-plans-cards-container {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas:
+			"starosel"
+			"kazanlak"
+			"bansko";
+		gap: 20px;
+	}
+
+	.travel-plans-cards-container #bansko-container .card-description {
+		width: calc(100% - 16px);
+		bottom: 9px;
+		left: unset;
+		transform: unset;
+	}
+
+	/* comments */
+	.comments-card-container {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas:
+			"jordan"
+			"taylor"
+			"avery";
+		gap: 20px;
+		justify-items: center;
+	}
+
+	.comments-card-container li {
+		width: 80%;
+	}
+
+	.comments-card-container li:nth-of-type(3) article {
+		display: block;
+	}
+
+	.comments-card-container li:nth-of-type(3) h2 {
+		height: unset;
+	}
+
+	/* footer */
+	footer .upper-side-wrapper {
+		flex-direction: column;
+		gap: 20px;
+		/* max-width: unset; */
+	}
+
+	.footer-content-container {
+		max-width: unset;
+	}
+
+	footer .form-wrapper input {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	body {
+		padding: 5px;
+	}
+
+	/* hero */
+	.hero .advantages-container {
+		padding: 0 5px;
+	}
+
+	/* landscape */
+	.landscape {
+		padding: 40px 5px;
+	}
+
+	/* our platform */
+	.our-platform {
+		padding: 0px 5px 40px 5px;
+	}
+
+	/* travel plans */
+	.travel-plans {
+		padding: 0px 5px 40px 5px;
+	}
+
+	/* comments */
+	.comments {
+		padding: 0px 5px 40px 5px;
+	}
+
+	.comments-card-container li {
+		width: 100%;
+	}
+
+	.comments-card-container li:nth-of-type(1) > article > div:first-of-type {
+		height: unset;
+	}
+
+	.comments-card-container li:nth-of-type(2) h2 {
+		height: unset;
+	}
+
+	/* explore */
+	.explore {
+		padding: 0px 20px 40px 20px;
+	}
+
+	.explore-buttons-container {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		gap: 17px;
+	}
+
+	/* footer */
+	footer {
+		padding: 30px 15px 24px 15px;
+	}
+	footer .upper-side-wrapper {
+		gap: 40px;
+	}
+
+	.footer-content-container {
+		align-items: center;
+	}
+
+	.footer-content-container > .p2-fonts {
+		text-align: center;
+	}
+
+	footer .nav-items-container {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	footer .nav-items-container a {
+		padding: 10px 15px;
+	}
+
+	.footer-sirma-rights-container {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		gap: 32px;
+	}
+	
+	.footer-sirma-rights-container p {
+		text-align: center;
+	}
+
+	.footer-sirma-rights-container a {
+		padding: 10px 15px;
+	}
+
+	.footer-sirma-rights-container ul {
+		flex-direction: column;
+		gap: 20px;
+	}
 }
