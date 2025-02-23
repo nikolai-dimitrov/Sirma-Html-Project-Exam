@@ -337,7 +337,7 @@ header .nav-btns-container .btn-secondary {
 }
 
 .comments-card-container li:nth-of-type(1) article {
-	padding-right: 31px;
+	padding-right: 30px;
 }
 
 .comments-card-container li:nth-of-type(1) h2 {
@@ -366,8 +366,9 @@ header .nav-btns-container .btn-secondary {
 
 /* explore section */
 .explore {
-	padding: 0 92px 80px 92px;
+	padding: 0 92px 77px 92px;
 }
+
 .explore-content-container {
 	display: flex;
 	justify-content: space-between;
@@ -385,8 +386,89 @@ header .nav-btns-container .btn-secondary {
 	margin-top: 16px;
 }
 
-.explore-buttons-container .btn-secondary  {
+.explore-buttons-container .btn-secondary {
 	border: 1px solid var(--gray--color);
 	color: var(--gray--color);
 	margin-right: 8px;
+}
+
+/* footer section */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	padding: 48px 31px 24px 31px;
+	background-color: var(--black--color);
+	color: var(--white--color);
+	border-radius: 16px;
+}
+
+footer .upper-side-wrapper {
+	margin-bottom: 48px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-content-container {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+footer .logo-container {
+	width: 177.5px;
+	height: 30px;
+}
+
+footer .nav-items-container {
+	display: flex;
+	gap: 32px;
+}
+
+.footer-form-container h4 {
+	font-weight: 600;
+	margin-bottom: 16px;
+}
+
+.footer-form-container input {
+	padding: 12px 20px;
+	border-radius: 50px;
+	background-color: var(--black--color);
+	border: 1px solid var(--white--color);
+	margin-right: 16px;
+	width: 306px;
+}
+
+.footer-form-container input::placeholder {
+	color: var(--white--color);
+}
+
+.footer-form-container .btn-secondary {
+	color: var(--black--color);
+	border: none;
+	background-color: var(--white--color);
+}
+
+footer .nav-items-container a {
+	color: var(--white--color);
+}
+
+/* Below divider */
+footer .lower-side-wrapper {
+	padding-top: 32px;
+	border-top: 1px solid var(--gray--color);
+}
+
+.footer-sirma-rights-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-sirma-rights-container ul {
+	display: flex;
+	gap: 16px;
+}
+
+.footer-sirma-rights-container ul a {
+	color: var(--white--color);
 }
