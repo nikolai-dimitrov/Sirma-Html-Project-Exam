@@ -373,7 +373,7 @@ header .nav-btns-container .btn-secondary {
 	display: flex;
 	justify-content: space-between;
 	padding: 64px;
-	background-color: #f5f5f5;
+	/* background-color: #f5f5f5; */
 	border-radius: 16px;
 }
 
@@ -389,6 +389,7 @@ header .nav-btns-container .btn-secondary {
 .explore-buttons-container .btn-secondary {
 	border: 1px solid var(--gray--color);
 	color: var(--gray--color);
+	background-color: var(--white--color);
 	margin-right: 8px;
 }
 
