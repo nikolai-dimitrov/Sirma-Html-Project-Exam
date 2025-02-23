@@ -288,14 +288,20 @@ header .nav-btns-container .btn-secondary {
 
 .travel-plans #starosel {
 	background-image: url("../img/starosel.jpg");
+	background-position: 50% 90%;
+	background-size: 172%;
 }
 
 .travel-plans #kazanlak {
 	background-image: url("../img/Kings\ Valley.jpg");
+	background-position: 52% 79%;
+	background-size: 139%;
 }
 
 .travel-plans #bansko {
 	background-image: url("../img/hotel\ bansko.jpg");
+	background-position: 53% 79%;
+	background-size: 175%;
 }
 
 .travel-plans button {
