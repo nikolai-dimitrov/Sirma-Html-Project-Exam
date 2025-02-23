@@ -3,7 +3,8 @@ header {
 	background-image: url("../img/places-to-visit-in-bulgaria.jpg");
 	border-radius: 16px;
 	padding: 20px 0 40px 0;
-	background-position: top;
+	background-position: 49% 11%;
+    background-size: 156% auto;
 }
 
 header nav {
