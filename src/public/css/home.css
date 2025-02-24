@@ -38,6 +38,14 @@ header .menu-icon-wrapper {
 	display: none;
 }
 
+.close-menu {
+	display: none;
+}
+
+.open-menu {
+	display: inherit;
+}
+
 header .nav-btns-container .btn-secondary {
 	border: none;
 	background-color: unset;
@@ -762,6 +770,10 @@ footer .lower-side-wrapper {
 
 @media screen and (max-width: 860px) {
 	/* header */
+	header nav {
+		flex-direction: column;
+	}
+
 	header .logo-nav-wrapper {
 		width: 100%;
 		justify-content: space-between;
@@ -780,6 +792,11 @@ footer .lower-side-wrapper {
 		color: var(--white--color);
 		font-size: 30px;
 	}
+	/* 
+	header .menu-icon-wrapper .close-menu {
+		display: none;
+	} */
+	/* .close-menu {} */
 
 	/* landscape */
 	.landscape {
@@ -1019,7 +1036,7 @@ footer .lower-side-wrapper {
 		align-items: center;
 		gap: 32px;
 	}
-	
+
 	.footer-sirma-rights-container p {
 		text-align: center;
 	}
