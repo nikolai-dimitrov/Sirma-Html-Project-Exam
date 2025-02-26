@@ -7,10 +7,13 @@ header {
 	background-size: 156% auto;
 }
 
-header nav {
+nav {
+	margin-bottom: 140px;
+}
+
+header .nav {
 	display: flex;
 	padding: 7.5px 60px;
-	margin-bottom: 140px;
 }
 
 header .logo-nav-wrapper {
@@ -37,6 +40,41 @@ header .nav-items-container a {
 header .menu-icon-wrapper {
 	display: none;
 }
+
+/* burger menu css */
+.nav-mobile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bg-unset {
+	background: unset;
+}
+
+.gap-margin-top {
+	gap: 6px;
+	margin-top: 16px;
+}
+
+.flex-col-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.close-menu {
+	display: none;
+}
+
+.open-menu {
+	display: inherit;
+}
+
+.nav-hidden {
+	display: none;
+}
+/*  */
 
 header .nav-btns-container .btn-secondary {
 	border: none;
@@ -488,7 +526,7 @@ footer .lower-side-wrapper {
 
 @media screen and (max-width: 1410px) {
 	/* header */
-	header nav {
+	header .nav {
 		justify-content: space-between;
 	}
 
@@ -633,7 +671,7 @@ footer .lower-side-wrapper {
 /* Very small laptop and mobile devices */
 @media screen and (max-width: 1024px) {
 	/* header */
-	header nav {
+	header .nav {
 		padding: 7.5px 20px;
 	}
 
@@ -762,18 +800,22 @@ footer .lower-side-wrapper {
 
 @media screen and (max-width: 860px) {
 	/* header */
+	header .nav {
+		flex-direction: column;
+	}
+
 	header .logo-nav-wrapper {
 		width: 100%;
 		justify-content: space-between;
 	}
 
-	header .nav-btns-container {
+	/* header .nav-btns-container {
 		display: none;
 	}
 
 	header .nav-items-container {
 		display: none;
-	}
+	} */
 
 	header .menu-icon-wrapper {
 		display: block;
@@ -1019,7 +1061,7 @@ footer .lower-side-wrapper {
 		align-items: center;
 		gap: 32px;
 	}
-	
+
 	.footer-sirma-rights-container p {
 		text-align: center;
 	}

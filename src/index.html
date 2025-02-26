@@ -16,13 +16,15 @@
 
 		<link rel="stylesheet" href="./public/css/main.css" />
 		<link rel="stylesheet" href="./public/css/home.css" />
-
+		
+		<script src="./public/js/nav.js" defer></script>
 		<title>Home</title>
 	</head>
 	<body>
 		<header>
 			<nav>
-				<div class="logo-nav-wrapper">
+				<div class="nav">
+					<div class="logo-nav-wrapper">
 					<div class="logo-container">
 						<?xml version="1.0" encoding="utf-8"?>
 						<!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -228,14 +230,17 @@
 						</li>
 					</ul>
 					<div class="menu-icon-wrapper">
-						<i class="fa-solid fa-bars"></i>
+						<i class="fa-solid fa-bars open-menu"></i>
+						<i class="fa-solid fa-x close-menu"></i>
+					</div>
+					</div>
+				 
+					<div class="nav-btns-container">
+						<button class="btn btn-secondary">Login</button>
+						<button class="btn btn-primary">Register</button>
 					</div>
 				</div>
-				
-				<div class="nav-btns-container">
-					<button class="btn btn-secondary">Login</button>
-					<button class="btn btn-primary">Register</button>
-				</div>
+				<div class="nav-mobile"></div>
 			</nav>
 			<section class="hero">
 				<div class="hero-information-container">
