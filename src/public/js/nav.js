@@ -50,7 +50,6 @@ const mediaScreenResizeHandler = (e) => {
 	if (e.matches == true) {
 		applyMobileNav();
 	} else {
-		// goes from mobile to desktop
 		applyDesktopNav();
 	}
 };
